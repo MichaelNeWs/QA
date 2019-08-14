@@ -1,0 +1,15 @@
+import java.util.Scanner; // подключаем сканер
+class Main {
+    public static void main (String[] args) {
+
+        System.out.print ("Введите имя:");
+        Scanner inputWord = new Scanner (System.in);
+        if (inputWord.hasNextLine() && inputWord.nextLine().equalsIgnoreCase("Вячеслав")) {
+            System.out.println ("Привет Вячеслав");
+        }
+        else {
+            System.out.println ("Нет такого имени");
+        }
+        inputWord.close();
+    }
+}
